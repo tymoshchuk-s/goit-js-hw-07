@@ -4,8 +4,8 @@ inputEl.addEventListener('input', handleInput)
 
 function handleInput(event) {
 
-    const inputValue = event.target.value;
-    if (inputValue.trim().length) {
+    const inputValue = event.target.value.trim();
+    if (inputValue.length) {
         document.querySelector('#name-output').textContent = inputValue;
     } else {
         document.querySelector('#name-output').textContent = 'Anonymous';
